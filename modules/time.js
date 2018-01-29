@@ -1,7 +1,7 @@
 var os = require('os');
 
 function liczenie() {
-	var czas = os.uptime;
+	var czas = os.uptime();
 	if (czas < 3600) {
 		var minuty = Math.floor(czas / 60);
 		var sekundy = czas % 60;
